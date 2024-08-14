@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Rubik", sans-serif;
+        }
+
+        .slide-container {
+            max-width: 1420px;
+            width: 100%;
+            height: 806px;
+            margin: 60px auto;
+            overflow: hidden;
+            position: relative;
+            background-image: url(./main-bg-image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .next {
+            position: absolute;
+            bottom: 30px;
+            right: 46%;
+        }
+
+        .prev {
+            position: absolute;
+            bottom: 30px;
+            left: 46%;
+        }
+
+        .arrow.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .caption {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px 0;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .year-content-and-image {
+            padding: 70px 50px 0px 180px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .slide-year-content h2 {
+            font-size: 58.23px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .slide-year-content p {
+            max-width: 360px;
+            font-size: 16.89px;
+            line-height: 28.1px;
+            font-weight: 400;
+            color: #C5C5C5;
+        }
+
+        .rotate-section {
+            width: 1500px;
+            height: 1500px;
+            border-radius: 100%;
+            position: absolute;
+            bottom: -130%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: transform 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .circyle-box {
+            width: 1400px;
+            height: 1400px;
+            border-radius: 100%;
+            border: 2px solid #fff;
+            position: absolute;
+            bottom: -130%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .circyle-box-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #fff;
+            position: absolute;
+            top: -6px;
+            left: 50%;
+
+        }
+
+        .year-1 {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .year-2 {
+            position: absolute;
+            top: 50px;
+            left: 58%;
+            transform: translateX(-58%);
+            transform: rotate(14deg);
+        }
+
+        .year-3 {
+            position: absolute;
+            top: 55px;
+            left: 64%;
+            transform: translateX(-64%);
+            transform: rotate(25deg);
+            margin: 30px 0 0 40px;
+        }
+
+        .year-4 {
+            position: absolute;
+            top: 145px;
+            left: 74.5%;
+            transform: translateX(-74.5%);
+            transform: rotate(32deg);
+        }
+
+        .year-5 {
+            position: absolute;
+            top: 230px;
+            left: 81.5%;
+            transform: translateX(-81.5%);
+            transform: rotate(42deg);
+        }
+
+        .year-6 {
+            position: absolute;
+            top: 336px;
+            left: 87.5%;
+            transform: translateX(-87.5%);
+            transform: rotate(55deg);
+        }
+
+        .year-7 {
+            position: absolute;
+            top: 460px;
+            left: 92.5%;
+            transform: translateX(-92.5%);
+            transform: rotate(68deg);
+        }
+
+        .botttom-fix-image {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
